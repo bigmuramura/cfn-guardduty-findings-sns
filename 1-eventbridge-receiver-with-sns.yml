@@ -20,7 +20,7 @@ Resources:
   EventsRule1:
     Type: "AWS::Events::Rule"
     Properties:
-      Name: !Sub ${ProjectName}-receive-rule
+      Name: !Sub ${ProjectName}-receiver-rule
       EventBusName: !Ref EventsEventBus1
       Targets:
         - Arn: !Ref SNSTopic1
